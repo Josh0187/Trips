@@ -1,0 +1,27 @@
+POST http://localhost:5000/api/trip
+content-type: application/json
+
+{
+    "location": "America",
+    "description": "Family vacation, was really fun"
+}
+
+###
+
+GET http://localhost:5000/api/trips
+content-type: application/json
+
+###
+PUT http://localhost:5000/api/trips/627990a231cc693ad2a90d0d
+content-type: application/json
+
+{
+    "location": "Updated location"
+}
+
+###
+
+DELETE  http://localhost:5000/api/trips/6279c284505de172b9d6f937
+content-type: application/json
+
+
