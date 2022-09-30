@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  display: block;
+}
+
+.nav {
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #333;
+  z-index: 100; 
+}
+
+.nav-item { 
+  float: left; 
+  font-size: 2em;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.nav-item-logout {
+  float: right; 
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: monospace;
+  border-radius: 15px;
+  background-color: white;
+  margin-top: 13px; 
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.nav-link-logout {
+  display: block;
+  text-align: center;
+  color: black; 
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+.nav-link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav-link:hover {
+  background-color: #111;
+}
+
+.nav-item-logout:hover {
+  background-color: #111;
+}
+
+.nav-link-logout:hover {
+  color: white; 
+}
+
+.nav-search {
+  float: right;
+  margin-top: 13px;
+  padding-left: 15px;
+}
+
+.nav-search-input {
+  padding: 6px;
+  font-size: 17px;
+  border: none;
+  border-radius: 15px;
+}
+
+.nav-search-button {
+  float: right;
+  padding: 6px 10px;
+  margin-right: 16px;
+  margin-left: 5px;
+  font-size: 17px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.trips {
+  position: relative;
+  display: flex; 
+  top: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow-x: auto;
+}
+
+.trips-card {
+  background: white;
+  width: 270px; 
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.trips-card-img {
+  height: 200px;
+  margin-bottom: 15px; 
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+  background-image: url(new_zealand.jpg);
+}
+
+.trips-card-sm-text {
+  padding: 10px; 
+}
+
+.trips-card-lg-text {
+  padding: 10px;
+}
+
+.no-trips-text {
+  color: white;
+}
+
+.trips-card-buttons {
+  display: flex;
+  width: 100%;
+}
+
+.trips-card-view-button {
+  text-decoration: none;
+  background: green;
+  color: white; 
+  padding: 5px 5px; 
+  padding-bottom: 5px;
+  text-align: center;
+  margin: 20px 50px;
+  margin-left: 10%;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.trips-card-delete-button {
+  text-decoration: none;
+  background-color: red; 
+  color: white;
+  padding: 5px 5px; 
+  padding-bottom: 5px;
+  text-align: center;
+  margin: 20px 50px; 
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.trips-card:hover {
+  background-color: #333;
+  color: white;
+  transform: scale(1.05);
+  transition: all 500ms ease; 
+}
+
+.trips-img-1 {
+  background-image: url('./new_zealand.jpg');
+}
+
+.trips-img-2 {
+  background-image: url('./new_zealand.jpg');
+}
+
+.trips-img-3 {
+  background-image: url('./new_zealand.jpg');
+}
+
+.add-trip-button {
+  position: relative;
+  top: 100px;
+  text-decoration: none;
+  background: white;
+  color: black; 
+  width: 100px; 
+  height: 30px; 
+  display: block;
+  text-align: center;
+  margin: 50px auto;
+  padding: 5px 5px;  
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.add-trip-button:hover {
+  background-color: #333;
+  color: white; 
+  transform: scale(1.1);
+  transition: all 500ms ease; 
+}
+
+.trip-basic-info-form, .signup-box, .login-box {
+  position: relative;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 100px 500px; 
+}
+
+.create-trip-date-inputs, .create-trip-lat-long-inputs {
+  display: flex;
+}
+
+.trip-end-date, .trip-long {
+  margin-left: 50px; 
+}
+
+.create-trip-label, .signup-label, .login-label {
+  font-weight: bold;
+}
+
+.create-trip-input, .signup-input, .login-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.create-trip-submit, .signup-button, .login-button {
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.create-trip-submit:hover {
+  background-color: #45a049;
+}
+
+
+.map {
+  position: relative;
+  height: 700px;
+  width: 75%;
+  top: 100px;
+  margin: 0 auto;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #333;
+}
+
+
